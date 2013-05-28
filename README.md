@@ -1,7 +1,7 @@
 CitrixXenserver-develop-settings
 ================================
 
-for OpenStack + CitrixXenserver-5.6.100sp2 Dom0 environment deploy
+for develop in CitrixXenserver-5.6.100sp2 
 
 
 # setup
