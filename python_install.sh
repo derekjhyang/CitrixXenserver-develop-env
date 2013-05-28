@@ -17,7 +17,11 @@ cd ${PYTHON_DIR}
 make 
 make install
 
+# fix yum
+sh python_upgrade_yum_fix.sh
+
 echo "Complete! Ready to reboot, then you can install python-tools to develop your projects :)"
+
 reboot
 
 
