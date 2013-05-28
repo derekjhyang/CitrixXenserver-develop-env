@@ -13,8 +13,8 @@ tar zxvf ${PYTHON_TARBALL} -C ${WORK_DIR}
 cd ${WORK_DIR}
 PYTHON_DIR=$(find -maxdepth 1 -iname 'Python-*' -type d)
 cd ${PYTHON_DIR}
-.//configure
-make -d
+./configure --prefix=/usr
+make 
 make install
 
 echo "Complete! Ready to reboot, then you can install python-tools to develop your projects :)"
