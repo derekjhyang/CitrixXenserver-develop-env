@@ -17,7 +17,7 @@ cd ${PYTHON_DIR}
 make -d
 make install
 
-echo "Complete! Ready to reboot, then you can install python-tools to develope your projects :)"
+echo "Complete! Ready to reboot, then you can install python-tools to develop your projects :)"
 reboot
 
 
