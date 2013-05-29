@@ -26,14 +26,3 @@ make && make install
 
 echo "Complete! Ready to reboot, then you can install python-tools to develop your projects :)"
 reboot
-
-
-
-
-
-
-
-
-
-
-
