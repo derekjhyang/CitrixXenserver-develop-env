@@ -24,10 +24,7 @@ make && make install
 # fix yum's python path
 #sh python_upgrade_yum_fix.sh
 
-
-
 echo "Complete! Ready to reboot, then you can install python-tools to develop your projects :)"
-
 reboot
 
 
