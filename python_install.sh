@@ -13,12 +13,18 @@ tar zxvf ${PYTHON_TARBALL} -C ${WORK_DIR}
 cd ${WORK_DIR}
 PYTHON_DIR=$(find -maxdepth 1 -iname 'Python-*' -type d)
 cd ${PYTHON_DIR}
-./configure --prefix=/usr
-make 
-make install
+# [FIXME, winnie]
+# because configure command default install path as '/usr/local',
+# so we adjust to '/usr', but we encounter a problem:
+# xenapi is developed by  python2.4
+#./configure --prefix=/usr
+./configure
+make && make install
 
-# fix yum
-sh python_upgrade_yum_fix.sh
+# fix yum's python path
+#sh python_upgrade_yum_fix.sh
+
+
 
 echo "Complete! Ready to reboot, then you can install python-tools to develop your projects :)"
 
