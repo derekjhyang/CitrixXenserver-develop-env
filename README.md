@@ -1,7 +1,7 @@
 CitrixXenserver-develop-settings
 ================================
 
-for develop in CitrixXenserver-5.6.100sp2 
+for development with OpenStack in CitrixXenserver-5.6.100sp2 
 
 
 # setup
