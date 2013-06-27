@@ -15,7 +15,11 @@ sh ${SETUPTOOLS_EGG}
 rm ${SETUPTOOLS_EGG}
 
 # pip install
-PIP_SRC=https://pypi.python.org/packages/source/p/pip/pip-1.3.1.tar.gz#md5=cbb27a191cebc58997c4da8513863153
+
+# for python 2.4
+PIP_SRC=https://pypi.python.org/packages/source/p/pip/pip-1.1.tar.gz
+# for python 2.7
+#PIP_SRC=https://pypi.python.org/packages/source/p/pip/pip-1.3.1.tar.gz#md5=cbb27a191cebc58997c4da8513863153
 PIP_TARBALL=$(mktemp)
 WORK_DIR=$(mktemp -d)
 wget --no-check-certificate -qO ${PIP_TARBALL} ${PIP_SRC}
