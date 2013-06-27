@@ -1,7 +1,7 @@
 CitrixXenserver-develop-settings
 ================================
 
-for development with OpenStack in CitrixXenserver-5.6.100sp2 
+for develop OpenStack in CitrixXenserver-5.6.100sp2 + Openvswitch 1.4.3
 
 but xenserver mostly develops its scripts with python2.4.3
 
