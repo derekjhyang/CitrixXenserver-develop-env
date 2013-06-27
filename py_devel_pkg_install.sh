@@ -6,7 +6,8 @@ PY_VER=$(python -V)
 pip install XenAPI
 
 if [ ${PY_VER}=='2.4.3' ]; then
-    pip install "sqlalchemy==0.7"
+    #pip install "sqlalchemy==0.7"
+    yum --enablerepo=epel -y install python-sqlalchemy
 else
     pip install sqlalchemy
 fi
