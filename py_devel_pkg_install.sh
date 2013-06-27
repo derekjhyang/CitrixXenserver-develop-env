@@ -5,3 +5,14 @@ pip install -U pip
 pip install XenAPI
 pip install sqlalchemy
 pip install pbr
+
+
+# XenAPIPlugin install
+ZIPBALL=$(mktemp)
+TMPDIR=$(mktemp -d)
+XENAPIPLUGIN_REPO=https://github.com/hswayne77/XenAPIPlugin/archive/master.zip
+wget -qO ${ZIPBALL} ${XENAPIPLUGIN_REPO}
+unzip ${ZIPBALL} -d ${TMPDIR}
+python ${TMPDIR}/setup.py install
+
+

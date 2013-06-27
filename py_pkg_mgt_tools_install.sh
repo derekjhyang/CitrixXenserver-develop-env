@@ -2,8 +2,13 @@
 
 set -x
 
-# setuptools install
-SETUPTOOLS_SRC=https://pypi.python.org/packages/2.7/s/setuptools/setuptools-0.6c11-py2.7.egg#md5=fe1f997bc722265116870bc7919059ea
+### setuptools install ###
+
+# for python 2.4
+SETUPTOOLS_SRC=https://pypi.python.org/packages/2.4/s/setuptools/setuptools-0.6c11-py2.4.egg#md5=bd639f9b0eac4c42497034dec2ec0c2b
+
+# for python 2.7
+#SETUPTOOLS_SRC=https://pypi.python.org/packages/2.7/s/setuptools/setuptools-0.6c11-py2.7.egg#md5=fe1f997bc722265116870bc7919059ea
 wget --no-check-certificate ${SETUPTOOLS_SRC}
 SETUPTOOLS_EGG=$(find -maxdepth 1 -name 'setuptools*.egg' -type f)
 sh ${SETUPTOOLS_EGG}
