@@ -10,3 +10,4 @@ yum --enablerepo=base install -y gcc make automake autoconf vim* \
 rpm -Uvh http://dl.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch.rpm
 
 yum --enablerepo=epel install -y htop
+yum --enablerepo=epel install -y python-eventlet
