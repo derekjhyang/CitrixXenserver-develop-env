@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 PY_VER=$(python -V)
-###pip install -U pip
+
 # the following pkg is for OpenStack support
 pip install XenAPI
 
